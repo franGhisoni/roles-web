@@ -17,8 +17,12 @@ export default defineConfig({
     port: Number(process.env.PORT ?? 4173),
     host: true,
     strictPort: false,
-    // Leading dot enables subdomain wildcard matching.
-    allowedHosts: ['.railway.app', '.ghisoni.com.ar'],
+    allowedHosts: [
+      'obel.ghisoni.com.ar',
+      'roles-web-production.up.railway.app',
+      '.railway.app',
+      '.ghisoni.com.ar',
+    ],
   },
   build: {
     sourcemap: true,
